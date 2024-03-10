@@ -26,6 +26,7 @@ class AppTextStyle {
         fontFamily: 'Roboto',
         color: AppColors.primaryColorWhite,
         fontWeight: FontWeight.bold,
+        fontSize: 25,
       );
 
   static TextStyle get titleLarge => const TextStyle(

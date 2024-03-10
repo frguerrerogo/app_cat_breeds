@@ -9,6 +9,11 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  go_router: ^13.2.0
+  http: ^1.2.1
+  flutter_bloc: ^8.1.4
+  equatable: ^2.0.5
+  get_it: ^7.6.7
 
 dev_dependencies:
   flutter_test:
@@ -17,3 +22,11 @@ dev_dependencies:
 
 flutter:
   uses-material-design: true
+
+  assets:
+    - assets/images/
+
+  fonts:
+    - family: Roboto
+      fonts:
+        - asset: lib/config/theme/fonts/Roboto/Roboto-Bold.ttf
