@@ -132,7 +132,10 @@ class _AppBarCustomState extends State<_AppBarCustom> {
                     color: AppColors.primaryColorApp,
                   ),
                   suffixIcon: GestureDetector(
-                    onTap: _onClearTapped,
+                    onTap: () {
+                      _textController.text = '';
+                      _catBreedsBloc.add(const TextChanged(text: ''));
+                    },
                     child: const Icon(
                       Icons.clear,
                       color: AppColors.primaryColorApp,
@@ -148,10 +151,5 @@ class _AppBarCustomState extends State<_AppBarCustom> {
         ],
       ),
     );
-  }
-
-  void _onClearTapped() {
-    _textController.text = '';
-    _catBreedsBloc.add(const TextChanged(text: ''));
   }
 }
